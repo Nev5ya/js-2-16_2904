@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="items-wrapper">
+            <div class="burger container_flex">
+                <label for="0" class="label checked-label">
+                    <i class="icofont-burger icofont-5x"></i>
+                    <span>Small Burger</span>
+                </label>
+                <label for="1" class="label">
+                    <i class="icofont-burger icofont-7x"></i>
+                    <span>Big Burger</span>
+                </label>
+            </div>
+            <div class="topping container_flex">
+                <label for="2" class="label">
+                    <i class="icofont-cheese icofont-5x"></i>
+                    <span>Cheese</span>
+                </label>
+                <label for="3" class="label">
+                    <i class="icofont-cabbage icofont-5x"></i>
+                    <span>Salad</span>
+                </label>
+                <label for="4" class="label">
+                    <i class="icofont-french-fries icofont-5x"></i>
+                    <span>Potato</span>
+                </label>
+            </div>
+            <div class="extra container_flex">
+                <label for="5" class="label">
+                    <i class="icofont-salt-and-pepper icofont-5x"></i>
+                    <span>Seasonings</span>
+                </label>
+                <label for="6" class="label">
+                    <i class="icofont-ketchup icofont-5x"></i>
+                    <span>Mayonaise</span>
+                </label>
+            </div>
+            <div class="calculate container_flex button">
+                <div class="calculate-wrapper">
+                    <div class="submit icofont-price icofont-flip-horizontal icofont-3x"></div>
+                    <div class="calculate__amount digits">Amount: </div>
+                </div>
+                <div class="calculate-wrapper">
+                    <div class="calories icofont-calculator icofont-3x"></div>
+                    <div class="calculate__calories digits">Calories: </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__hidden">
+            <input type="radio" name="burger" class="burger__small" id="0">
+            <input type="radio" name="burger" class="burger__big" id="1">
+            <input type="radio" name="topping" class="topping__cheese" id="2">
+            <input type="radio" name="topping" class="topping__salad" id="3">
+            <input type="radio" name="topping" class="topping__potato" id="4">
+            <input type="radio" name="extra" class="extra__seasonings" id="5">
+            <input type="radio" name="extra" class="extra__mayo" id="6">
+        </div>
+    </div>
+</body>
+</html>
